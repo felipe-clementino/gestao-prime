@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg--dark: #0E0F1C;
+    --bg--card: #564B4B;
+    --bg--plans: #151E30;
+    --primary-color: #6177FA;
+    --text--main: #fff;
+    --transition: all 0.3s ease;
+}
