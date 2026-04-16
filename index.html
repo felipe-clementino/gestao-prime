@@ -1,68 +1,232 @@
-  <!doctype html>
-  <html lang="pt-br">
+<!doctype html>
+<html lang="pt-br">
 
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>landing page</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet" />
-  </head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
 
-  <body>
+<body>
     <header class="navbar">
-      <div class="container flex-nav">
-        <div class="logo">GESTÃO<span>PRIME</span></div>
-      </div>
-      <nav class="nav_menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Funcionalidades</a></li>
-          <li><a href="#plans">Planos</a></li>
-          <li><a href="#blogs">Blog</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-        <div class="navbtn">
-          <a href="#" class="btn btn_outilne">Login</a>
-          <a href="#" class="btn btn_neon">Criar sua Conta</a>
+        <div class="container flex-nav">
+            <div class="logo">GESTÃO<span>PRIME</span></div>
         </div>
-        <div class="menu-toggle" id="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
+        <nav class="nav_menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Funcionalidades</a></li>
+                <li><a href="#plans">Planos</a></li>
+                <li><a href="#blogs">Blog</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="user-access" id="userAccess">
+                <div class="user-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg>
+                </div>
+                <div class="user-labels">
+                    <span class="label-entrar">Entrar</span>
+                    <span class="label-cadastrar">Cadastre-se</span>
+                </div>
+                <div class="user-dropdown" id="userDropdown">
+                    <a href="#">Entrar</a>
+                    <a href="#" class="dropdown-highlight">Criar sua Conta</a>
+                </div>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
     <section id="home" class="hero">
-      <div class="container grid_hero">
-        <div class="hero_text">
-          <h1>Liberte-se das finanças complicadas. <br> <span class="text_gradiente"> Viva com inteligência</span></h1>
-          <p>Gerencie receitas, despesas, metas e investimentos em uma plataforma completa e intuitiva. Tome decisões
-            financeiras mais inteligentes com dados em tempo real.</p>
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <h1>Controle suas finança <br>com <span class="text-gradiente">inteligência</span> <br> e simplicidade
+                </h1>
 
-          <div class="hero_action">
-            <a href="#" class="btn btn_neon">Experimente Grátis</a>
-            <a href="#" class="btn btn_outilne">Ver demo</a>
-          </div>
-        </div>
+                <p>Gerencie receitas, despesas, metas e investimentos em uma plataforma completa e intuitiva. Tome
+                    decisões
+                    financeiras mais inteligentes com dados em tempo real.</p>
 
-        <div class="hero_visual">
-          <div class="card_mockup">
-            <img src="assets/img/sistema.png" alt="">
-            <div class="chart_line"></div>
-            <div class="stats_row">
-              <div class="stat_box"></div>
-              <div class="stat_box"></div>
+                <div class="hero-action">
+                    <a href="#" class="btn btn-neon">Começar agora - grátis</a>
+                    <a href="#" class="btn btn-outilne">Ver demostração →</a>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
 
-  </html>
+            <div class="hero_visual">
+                <div class="card-mokup">
+                    <img src="assets/img/img1.png" alt="">
+                    <div class="chart-line"></div>
+                    <div class="stats-row">
+                        <div class="stat-box"></div>
+                        <div class="stat-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">FUNCIONALIDADES</h2>
+            <h2 class="sub-title-opition">
+                Tudo que você precisa <br>para suas finanças
+            </h2>
+            <p class="p-funcionalidades">Ferramentas poderosas, design intuitivo e dados em <br> tempo real para
+                transformar sua relação com o <br>dinheiro.</p>
+            <div class="grid-features">
+                <div class="features-card">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-feather"></i></span>
+                    </div>
+                    <h3>Dashboard Intuitivo</h3>
+                    <p>Visualize sua suade finaceira com graficos claros e objetivos.</p>
+                </div>
+                <div class="features-card">
+                    <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <h3>Gestão de cartões</h3>
+                    <p>Monitore parcelamento e evite surpresas na sua fatura do proximo mês</p>
+                </div>
+
+            </div>
+            <div class="grid-features">
+                <div class="features-card">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-feather"></i></span>
+                    </div>
+                    <h3>Dashboard Intuitivo</h3>
+                    <p>Visualize sua suade finaceira com graficos claros e objetivos.</p>
+                </div>
+                <div class="features-card">
+                    <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <h3>Gestão de cartões</h3>
+                    <p>Monitore parcelamento e evite surpresas na sua fatura do proximo mês</p>
+                </div>
+
+            </div>
+
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nobis unde consectetur odio
+                dolores, similique labore aut neque ipsum non. Accusantium tempora pariatur, reprehenderit ducimus neque
+                cumque voluptatibus molestias! Nisi!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat facilis autem quo tempore esse tenetur, ipsa porro animi placeat, architecto molestias
+                consequuntur beatae provident vel reiciendis perferendis minima blanditiis veniam! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Delectus non ducimus qui incidunt expedita dolor impedit sapiente
+                deleniti nulla unde, ullam eos id? Minus illo cum sapiente? Aut, fugit in.
+            </p>
+        </div>
+    </section>
+
+    <section id="plans" class="plan">
+        <div class="container">
+            <h1 class="section-title">Planos</h1>
+            <div class="grid-plan">
+                <div class="plan-card">
+                    <div class="icon"> <span><i class="fa-solid fa-face-smile"></i></span></div>
+                    <h3>Livre</h3>
+                    <p>Experimente Gestão Prime</p>
+                    <p class="price">R$ 0,</p>
+                    <a href="" class="btn btn-outilne">Contratar</a>
+                    <hr>
+
+                    <div class="plan-list">
+                        <ul>
+                            <li>item</li>
+                            <li>item</li>\\\\
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plan-card plan-highligth">
+                    <div class="icon"> <span><i class="fa-solid fa-medal"></i></span></div>
+                    <h3>Pro</h3>
+                    <p>Para produtividade diaria</p>
+                    <p class="price">R$ 199,</p>
+                    <a href="" class="btn btn-outilne" btn>Contratar</a>
+                    <hr>
+
+                    <div class="plan-list">
+                        <ul>
+                            <li>tudo do gratuito</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="icon"> <span><i class="fa-solid fa-crown"></i></span></div>
+                    <h3>Premium</h3>
+                    <p>Para produtividade diaria</p>
+                    <p class="price">R$ 99,</p>
+                    <a href="" class="btn btn-outilne">Contratar</a>
+                    <hr>
+
+                    <div class="plan-list">
+                        <ul>
+                            <li>tudo do gratuito e pro</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title"></h2>
+            <div class="grid-blog">
+                <div class="blog-card">
+                    <img src="assets/img/post1.jpg" alt="post do blog">
+                    <h3>Titulo do blog</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <div class="blog-footer-card">
+                        <a href="#" class="btn btn-outilne">Ver mais</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="assets/img/post1.jpg" alt="post do blog">
+                    <h3>Titulo do blog</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <div class="blog-footer-card">
+                        <a href="#" class="btn btn-outilne">Ver mais</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="assets/img/post1.jpg" alt="post do blog">
+                    <h3>Titulo do blog</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <div class="blog-footer-card">
+                        <a href="#" class="btn btn-outilne">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box-btn-blog">
+                <a href="#" class="btn btn-neon"></a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
