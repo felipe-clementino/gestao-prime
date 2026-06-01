@@ -17,41 +17,42 @@
     <header class="navbar">
         <div class="container flex-nav">
             <div class="logo">GESTÃO<span>PRIME</span></div>
-        
-        <nav class="nav_menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Funcionalidades</a></li>
-                <li><a href="#plans">Planos</a></li>
-                <li><a href="#blogs">Blog</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
 
-        <div class="user-access" id="userAccess">
-                <div class="user-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round">
-                        <circle cx="12" cy="8" r="4" />
-                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-                    </svg>
+            <nav class="nav_menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Funcionalidades</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+
+                <div class="user-access" id="userAccess">
+                    <div class="user-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                        </svg>
+                    </div>
+                    <div class="user-labels">
+                        <span class="label-entrar">Entrar</span>
+                        <span class="label-cadastrar">Cadastre-se</span>
+                    </div>
+                    <div class="user-dropdown" id="userDropdown">
+                        <a href="#">Entrar</a>
+                        <a href="#" class="dropdown-highlight">Criar sua Conta</a>
+                    </div>
                 </div>
-                <div class="user-labels">
-                    <span class="label-entrar">Entrar</span>
-                    <span class="label-cadastrar">Cadastre-se</span>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="user-dropdown" id="userDropdown">
-                    <a href="#">Entrar</a>
-                    <a href="#" class="dropdown-highlight">Criar sua Conta</a>
-                </div>
-            </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
+            </nav>
         </div>
+        <div id="menu-toggle">Menu</div>
     </header>
 
     <section id="home" class="hero">
@@ -82,6 +83,7 @@
             </div>
         </div>
     </section>
+
 
     <section id="features" class="features">
         <div class="container">
@@ -149,7 +151,7 @@
                     <div class="plan-list">
                         <ul>
                             <li>item</li>
-                            <li>item</li>\\\\
+                            <li>item</li>
                             <li>item</li>
                             <li>item</li>
                         </ul>
@@ -199,81 +201,141 @@
     <section id="blog" class="blog">
         <div class="container">
             <h2 class="section-title">Blog</h2>
+            <h2 class="sub-title-opition">
+                Dicas e conteúdo <br>para sua educação financeira
+            </h2>
+            <p class="p-blog"><a href="" class="link-blog">Ver todos os artigos →</a></p>
+
             <div class="grid-blog">
-                <div class="blog-card">
-                    <img src="assets/img/post1.jpg" alt=" post do blog">
-                    <h3>Titulo do blog</h3>
-                    <p> Lorem ipsum dolor sit amet ...</p>
-                    <div class="blog-footer-card">
-                        <a href="#" class="btn btn-outilne"> Ver mais</a>
 
+                <div class="blog-card">
+                    <div class="card-thumb thumb-financas">
+                        <i class="fa-solid fa-chart-bar"></i>
                     </div>
-                </div>
-                <div class="blog-card">
-                    <img src="assets/img/post1.jpg" alt=" post do blog">
-                    <h3>Titulo do blog</h3>
-                    <p> Lorem ipsum dolor sit amet ...</p>
-                    <div class="blog-footer-card">
-                        <a href="#" class="btn btn-outilne"> Ver mais</a>
-
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <img src="assets/img/post1.jpg" alt=" post do blog">
-                    <h3>Titulo do blog</h3>
-                    <p> Lorem ipsum dolor sit amet ...</p>
-                    <div class="blog-footer-card">
-                        <a href="#" class="btn btn-outilne"> Ver mais</a>
-
+                    <div class="card-body">
+                        <span class="card-category">Finanças Pessoais</span>
+                        <h3 class="card-title">Como montar uma reserva de emergência em 6 meses</h3>
+                        <div class="card-meta">
+                            <span>Mar 10, 2026</span>
+                            <span>5 min de leitura</span>
+                        </div>
                     </div>
                 </div>
 
-            </div>
-            <div class="box-btn-blog">
-                <a href="#" class="btn btn-neon"> Ir ao blog</a>
+                <div class="blog-card">
+                    <div class="card-thumb thumb-invest">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Investimentos</span>
+                        <h3 class="card-title">Tesouro Direto ou CDB: qual escolher em 2026?</h3>
+                        <div class="card-meta">
+                            <span>Mar 2026</span>
+                            <span>7 min de leitura</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="card-thumb thumb-plan">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Planejamento</span>
+                        <h3 class="card-title">5 metas financeiras para definir agora mesmo</h3>
+                        <div class="card-meta">
+                            <span>Mar 2026</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Contato -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contatos</h2>
-                
-                <div class="grid-contact">
-                    <div class="contact-card">
-                        <h3>Fale conosco</h3>
-                        <p>Entre em contato conosco e nossa equipe responderá o mais breve possível</p>
-                        <form action="#" class="contact-form">
-                            <input type="text" placeholder="Seu nome" required>
-                            <input type="email" placeholder="Seu email" required>
-                            <textarea placeholder="Sua mensagem" required></textarea>
-                            <button type="submit" class="btn btn-neon">Enviar mensagem</button>
-                        </form>
+    <section id="contact" class="contact">
+        <div class="container grid-contact">
+
+            <div class="contact-info">
+                <h2 class="section-title">CONTATO</h2>
+                <h2 class="sub-title-opition">Fale Conosco</h2>
+                <p class="contact-desc">Tem dúvidas, sugestões ou quer saber mais?<br>Estamos aqui para ajudar.</p>
+                <p class="contact-desc">Nossa equipe responde em até 24 horas em dias úteis. Você também pode explorar
+                    nossa central de ajuda para respostas rápidas.</p>
+
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span class="contact-label">E-mail</span>
+                            <span class="contact-value">gestaoprime@gmail.com</span>
+                        </div>
                     </div>
-                    <div class="contact-card info">
-                        <h3>Informações de contato</h3>
-                        <p>Lorem, ipsum dolor sit amet</p>
-                        <p><strong>Email:</strong>contact@gestaoprime.com</p>
-                        <p><strong>Telefone:</strong>+55 11 12345-6788</p>
-                        <p><strong>Endereço:</strong>Rua exemplo, 123 - São paulo/SP</p>
-                        <p><strong>Horário de Funcionamento</strong>Segunda a Sexta, 9h às 18h</p>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span class="contact-label">Telefone</span>
+                            <span class="contact-value">(11) 99999-9999</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span class="contact-label">Localização</span>
+                            <span class="contact-value">São Paulo, SP — Brasil</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <footer class="footer">
-            <div class="container text-center">
-                <p>&copy; 2026 Gestão Prime - Todos os direitos reservados</p>
+            <div class="contact-form">
+                <div class="form-group">
+                    <label>Nome completo</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea rows="6"></textarea>
+                </div>
+                <button class="btn btn-form">Enviar mensagem</button>
             </div>
-            <div class="social">
-                <a href="https://" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://" target="_blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">GESTÃO<span>PRIME</span></div>
+                <p>A plataforma mais completa para gerenciar suas finanças pessoais e empresariais com inteligência.</p>
             </div>
-        </footer>
+            <div class="footer-nav">
+                <h4>NAVEGAÇÃO</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Funcionalidades</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2026 GestaoPrime. Todos os direitos reservados.</span>
+            <div class="footer-links">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
