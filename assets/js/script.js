@@ -1,12 +1,16 @@
-const btnToggle = document.getElementById("menu-toggle");
-const menuNav = document.querySelector(".nav_menu");
-
+const navMenu = document.querySelector('.nav_menu')
+const btnToggle = document.querySelector('.menu_toggle')
+ 
 btnToggle.addEventListener('click', () => {
-    menuNav.classList.toggle('show');
+    navMenu.classList.toggle('show')
+   
 });
-
+ 
 window.addEventListener('click', (e) =>{
     if(!btnToggle.contains(e.target)){
-        menuNav.classList.remove('show');
+        navMenu.classList.remove('show')
     }
-});
+    navMenu.classList.toggle("active");
+    btnToggle.classList.toggle("active");
+})
+ 
